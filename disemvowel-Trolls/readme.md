@@ -13,3 +13,6 @@ Note: for this kata y isn't considered a vowel.
 ### Examples
 
 disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!"
+
+### Changelog
+2023-01-04 - Changed the name of the directory
