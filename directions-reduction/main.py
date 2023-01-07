@@ -1,3 +1,5 @@
+''' WORK IN PROGRESS'''
+
 def dirReduc(arr):
     ''' Make sure you only take routes that make sense and not do needless steps'''
     # Translate the array into lower case
