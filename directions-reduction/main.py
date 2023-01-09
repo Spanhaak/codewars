@@ -1,29 +1,38 @@
-''' WORK IN PROGRESS'''
-
+''' Work in progress '''
 def dirReduc(arr):
     ''' Make sure you only take routes that make sense and not do needless steps'''
-    # Translate the array into lower case
-    lowercase_list = []
+
+    number_directions =[]
+
+    amount_of_directions = len(arr)
+    print(amount_of_directions)
+
     for direction in arr:
-        arr = direction.lower()
-        lowercase_list.append(arr)
+        if direction == "WEST":
+            number_directions.append(-2)
+        if direction == "EAST":
+            number_directions.append(+2)
+        if direction == "NORTH":
+            number_directions.append(+1)        
+        if direction == "SOUTH":
+            number_directions.append(-1)
 
-    # How many are in the list
-    amount_of_directions = len(lowercase_list)
-    print(f"how many items      :", len(lowercase_list))
+    print(number_directions)
 
-    while amount_of_directions > -1:
-        print(lowercase_list[amount_of_directions])
-        if lowercase_list[amount_of_directions] == 'north':
-            print(lowercase_list[amount_of_directions])
+    if number_directions[0] + number_directions[1] == 0:
+       number_directions.remove(number_directions[0])
+       number_directions.remove(number_directions[1])
+       print(number_directions)
+    if number_directions[0] + number_directions[1] == 0:
+       number_directions.remove(number_directions[0])
+       number_directions.remove(number_directions[1])
+       print(number_directions)
+    if number_directions[0] + number_directions[1] == 0:
+       number_directions.remove(number_directions[0])
+       number_directions.remove(number_directions[1])
+       print(number_directions)      
 
-        else:
-            continue    
 
-        print(f"run", str(amount_of_directions))
-        amount_of_directions = amount_of_directions - 1    
-
-
-
-u=["SOUTH", "NORTH", "SOUTH", "EAST", "NORTH","NORTH", "NORTH","south" ]
+u=["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
 dirReduc(u)
+
