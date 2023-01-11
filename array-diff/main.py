@@ -1,4 +1,5 @@
 def array_diff(a, b):
+    ''' This function returns a list but removes the items of the second list '''
     print(f'list a: ', a)
     print(f'list b: ', b)
     for each_b in b:

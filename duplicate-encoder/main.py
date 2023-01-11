@@ -1,7 +1,5 @@
 def duplicate_encode(word):
     ''' this function changes the input to a specifc char if a char is more than 1 time in the string '''
-    one     = '('
-    more    = ')'
 
     # make the input lower-case for comparison
     word = word.lower()

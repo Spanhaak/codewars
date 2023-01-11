@@ -1,4 +1,5 @@
 def spin_words(sentence):
+    ''' this function spins the words back '''
     splitted_words  = sentence.split()
     new_sentence    = []
     for word in splitted_words:
@@ -10,4 +11,6 @@ def spin_words(sentence):
             new_sentence.append(word)
             print (word)
     sentence = ' '.join(new_sentence)            
+    
     return sentence
+    

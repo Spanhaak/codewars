@@ -1,7 +1,5 @@
-''' Vowel Count'''
-''' Return the number (count) of vowels in the given string '''
-
 def get_count(sentence):
+    ''' Return the number (count) of vowels in the given string '''
     counting = 0
     vowels = ['a', 'e', 'i', 'o' ,'u']
     for vowel in sentence:

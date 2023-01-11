@@ -24,5 +24,3 @@ def high(x):
     result = list(sorted_dict.keys())[0]
     
     return result
-
-high('man i need a taxi up to ubud')

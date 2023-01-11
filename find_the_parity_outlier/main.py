@@ -1,4 +1,5 @@
 def find_outlier(integers):
+    ''' This function finds the outlier in the given input '''
     # determine if most is even or odd
     positive = 0
     if integers[0] % 2 == 0:

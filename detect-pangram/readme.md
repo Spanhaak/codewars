@@ -1,12 +1,5 @@
-# RGB to Hex Converter
+# Pangram
 
-The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.
+A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).
 
-Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.
-
-### Examples
-
-rgb(255, 255, 255) # returns FFFFFF
-rgb(255, 255, 300) # returns FFFFFF
-rgb(0,0,0) # returns 000000
-rgb(148, 0, 211) # returns 9400D3
+Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.

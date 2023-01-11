@@ -19,4 +19,5 @@ def solution(number):
                 counting_list.append(nums)
     
     total = sum(counting_list)
+    
     return(total)

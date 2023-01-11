@@ -1,12 +1,13 @@
-# RGB to Hex Converter
+# Your order please
 
-The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.
+Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
 
-Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here.
+Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
 
-### Examples
+If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers.
 
-rgb(255, 255, 255) # returns FFFFFF
-rgb(255, 255, 300) # returns FFFFFF
-rgb(0,0,0) # returns 000000
-rgb(148, 0, 211) # returns 9400D3
+## Examples
+
+"is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
+"4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
+""  -->  ""

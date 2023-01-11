@@ -18,9 +18,9 @@ def rgb(r, g, b):
         
     
     test = '%02x%02x%02x' % (r, g, b)
+    test = test.upper()
 
-    print (f'Converted value:',test.upper())
+    print (f'Converted value:',test.upper)
 
     return test
 
-rgb(255, 255, 255)

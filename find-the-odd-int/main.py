@@ -1,4 +1,5 @@
 def find_it(seq):
+    ''' This function returns the odd integer '''
     my_dict = {}
     for number in seq:
         if number in my_dict:

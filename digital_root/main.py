@@ -1,4 +1,5 @@
 def digital_root(n):
+    ''' This function builds the digital root of the input '''
     # build a list of numbers
     number  = str(n)
     num_list =[]

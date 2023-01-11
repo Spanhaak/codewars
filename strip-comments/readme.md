@@ -17,4 +17,4 @@ bananas
 The code would be called like so:
 
 result = solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"])
-# result should == "apples, pears\ngrapes\nbananas"
+result should == "apples, pears\ngrapes\nbananas"
