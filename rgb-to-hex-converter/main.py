@@ -15,8 +15,6 @@ def rgb(r, g, b):
     if b >= 255:
         b = 255        
 
-        
-    
     test = '%02x%02x%02x' % (r, g, b)
     test = test.upper()
 
