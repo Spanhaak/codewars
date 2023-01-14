@@ -1,4 +1,3 @@
-''' WIP '''
 from datetime import datetime, timedelta
 def format_duration(seconds):
     ''' This function is to display converted seconds into a human readable format '''
@@ -7,14 +6,12 @@ def format_duration(seconds):
         return 'now'
     my_list = []
 
+    # converting the seconds to time
     sec = timedelta(seconds=seconds)
     d = datetime(1,1,1) + sec
 
-    print (d)
-
     year = ("%d" % (d.year-1))
     my_list.append(int(year))
-    #day = ("%d" % (d.day))
     year = int(year)
     day = (seconds // 86400 - year * 365)
     my_list.append(int(day))
@@ -78,54 +75,38 @@ def format_duration(seconds):
     else:
         pass    
 
-
    # deal with the comma situation
     if len(return_list) == 6:
         value = return_list[0]
         del return_list[0]
         value = value+','
-        return_list.insert(0, value)
-        print(return_list)    
+        return_list.insert(0, value)  
         value = return_list[1]
         del return_list[1]
         value = value+','
         return_list.insert(1, value)
-        print(return_list)
         value = return_list[2]
         del return_list[2]
         value = value+','
         return_list.insert(2, value)
-        print(return_list)
 
     # deal with the comma situation
     if len(return_list) == 5:
         value = return_list[0]
         del return_list[0]
         value = value+','
-        return_list.insert(0, value)
-        print(return_list)    
+        return_list.insert(0, value)  
         value = return_list[1]
         del return_list[1]
         value = value+','
         return_list.insert(1, value)
-        print(return_list)
- 
+
     # deal with the comma situation
     if len(return_list) == 4:
         value = return_list[0]
         del return_list[0]
         value = value+','
-        return_list.insert(0, value)
-        print(return_list)    
+        return_list.insert(0, value) 
 
     end_result = ' '.join(return_list)
-    print(f"My List:",my_list)
-    print(f"Return List:",return_list)
-    print(f"End list:",end_result)
-    print(f"Length list:", len(return_list))
     return end_result
-
-
-
-
-format_duration(132030240) 
